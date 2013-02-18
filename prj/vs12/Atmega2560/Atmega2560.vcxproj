@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseAtmega2560|Win32">
+      <Configuration>ReleaseAtmega2560</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\code\communication\spi\spi.cpp" />
+    <ClCompile Include="..\..\..\src\code\core\board\arduinoMega2560\arduinoMega2560Boardold.cpp" />
+    <ClCompile Include="..\..\..\src\code\core\board\arduinoMega2560\arduinoMega2560Board.cpp" />
+    <ClCompile Include="..\..\..\src\code\core\board\board.cpp" />
+    <ClCompile Include="..\..\..\src\code\core\interrupts\interrutps.cpp" />
+    <ClCompile Include="..\..\..\src\code\core\memory\memory.cpp" />
+    <ClCompile Include="..\..\..\src\code\core\time\time.cpp" />
+    <ClCompile Include="..\..\..\src\code\main.cpp" />
+    <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\code\communication\spi\spi.h" />
+    <ClInclude Include="..\..\..\src\code\core\board\arduinoMega2560\arduinoMega2560Boardold.h" />
+    <ClInclude Include="..\..\..\src\code\core\board\arduinoMega2560\arduinoMega2560Board.h" />
+    <ClInclude Include="..\..\..\src\code\core\board\board.h" />
+    <ClInclude Include="..\..\..\src\code\core\interrupts\interrupts.h" />
+    <ClInclude Include="..\..\..\src\code\core\memory\new.h" />
+    <ClInclude Include="..\..\..\src\code\core\time\time.h" />
+    <ClInclude Include="Header.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DFB13679-000F-47D6-A8EA-DCFE22976E66}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='ReleaseAtmega2560|Win32'">
+    <PlatformToolset>v110</PlatformToolset>
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeOutput>pclink.hex</NMakeOutput>
+    <NMakePreprocessorDefinitions>__AVR_ATmega2560__;ATMEGA2560;ATMEGA;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <IncludePath>$(ProjectDir)../../../src/code/;$(IncludePath)</IncludePath>
+    <NMakeBuildCommandLine>make all debug=true</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>make rebuild debug=true</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>make clean debug=true</NMakeCleanCommandLine>
+    <NMakeIncludeSearchPath>C:\AVRToolchain\avr\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeOutput>Atmega2560.exe</NMakeOutput>
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseAtmega2560|Win32'">
+    <IncludePath>$(ProjectDir)../../../src/code/;$(IncludePath)</IncludePath>
+    <NMakeBuildCommandLine>make all debug=false</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>make rebuild debug=false</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>make clean debug=false</NMakeCleanCommandLine>
+    <NMakeOutput>pclink.hex</NMakeOutput>
+    <NMakePreprocessorDefinitions>__AVR_ATmega2560__;ATMEGA2560;ATMEGA;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>C:\AVRToolchain\avr\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

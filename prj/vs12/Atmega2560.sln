@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Atmega2560", "Atmega2560\Atmega2560.vcxproj", "{DFB13679-000F-47D6-A8EA-DCFE22976E66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DebugAtmega2560|Win32 = DebugAtmega2560|Win32
+		ReleaseAtmega2560|Win32 = ReleaseAtmega2560|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFB13679-000F-47D6-A8EA-DCFE22976E66}.DebugAtmega2560|Win32.ActiveCfg = Debug|Win32
+		{DFB13679-000F-47D6-A8EA-DCFE22976E66}.DebugAtmega2560|Win32.Build.0 = Debug|Win32
+		{DFB13679-000F-47D6-A8EA-DCFE22976E66}.ReleaseAtmega2560|Win32.ActiveCfg = ReleaseAtmega2560|Win32
+		{DFB13679-000F-47D6-A8EA-DCFE22976E66}.ReleaseAtmega2560|Win32.Build.0 = ReleaseAtmega2560|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

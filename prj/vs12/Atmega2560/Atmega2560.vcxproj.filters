@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{7c331dbe-13c8-4004-89fe-21d8fe81fb82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\board">
+      <UniqueIdentifier>{1d92e380-988e-42df-870c-040662252180}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\board\arduinomega2560">
+      <UniqueIdentifier>{05e91c46-c047-4b9e-aaca-81fa533bc924}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\interrupts">
+      <UniqueIdentifier>{5974aa11-ec19-4a09-9a09-7d6d5d0c5d70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\memory">
+      <UniqueIdentifier>{ef1d63b1-6409-4749-b9cb-9ebe0d1f615a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\time">
+      <UniqueIdentifier>{e72bd3b4-9626-4985-a864-298b0ec4e7ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="communication">
+      <UniqueIdentifier>{cd9b1c60-1839-4e3f-934a-5a25e088285f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\code\core\board\board.cpp">
+      <Filter>core\board</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\code\main.cpp" />
+    <ClCompile Include="..\..\..\src\code\core\memory\memory.cpp">
+      <Filter>core\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\code\core\time\time.cpp">
+      <Filter>core\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\code\core\interrupts\interrutps.cpp">
+      <Filter>core\interrupts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\code\core\board\arduinoMega2560\arduinoMega2560Boardold.cpp">
+      <Filter>core\board\arduinomega2560</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\code\core\board\arduinoMega2560\arduinoMega2560Board.cpp">
+      <Filter>core\board\arduinomega2560</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\code\communication\spi\spi.cpp">
+      <Filter>communication</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>communication</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\code\core\board\board.h">
+      <Filter>core\board</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\code\core\memory\new.h">
+      <Filter>core\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\code\core\time\time.h">
+      <Filter>core\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\code\core\interrupts\interrupts.h">
+      <Filter>core\interrupts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\code\core\board\arduinoMega2560\arduinoMega2560Boardold.h">
+      <Filter>core\board\arduinomega2560</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\code\core\board\arduinoMega2560\arduinoMega2560Board.h">
+      <Filter>core\board\arduinomega2560</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\code\communication\spi\spi.h">
+      <Filter>communication</Filter>
+    </ClInclude>
+    <ClInclude Include="Header.h">
+      <Filter>communication</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

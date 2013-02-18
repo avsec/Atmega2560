@@ -1,0 +1,11 @@
+﻿Compilación iniciada a las 15/02/2013 21:33:17.
+     1>Proyecto "C:\Users\usuario\Documents\Atmega2560\prj\vs12\Atmega2560\Atmega2560.vcxproj" en el nodo 2 (Build destinos).
+     1>Build:
+         make all debug=false
+         C:/AVRToolchain/bin/avr-g++  -o ../../../bin/atmega2560/atmega2560.elf ../../../src/code/main.cpp ../../../src/code/core/board/board.cpp ../../../src/code/core/board/arduinoMega2560/arduinoMega2560Board.cpp ../../../src/code/core/memory/memory.cpp ../../../src/code/core/time/time.cpp ../../../src/code/core/interrupts/interrupts.cpp -mmcu=atmega2560 -DATMEGA -DATMEGA2560 -DF_CPU=16000000L -Wall -Werror -I../../../src/code  -O4 -std=c++0x -fno-access-control -fno-enforce-eh-specs -fno-rtti -fno-exceptions -ffunction-sections -fdata-sections  
+         C:/AVRToolchain/bin/avr-objcopy  -O ihex -R .eeprom -R .fuse -R .lock -R .signature ../../../bin/atmega2560/atmega2560.elf ../../../bin/atmega2560/atmega2560.hex
+     1>Compilación del proyecto terminada "C:\Users\usuario\Documents\Atmega2560\prj\vs12\Atmega2560\Atmega2560.vcxproj" (Build destinos).
+
+Compilación correcta.
+
+Tiempo transcurrido 00:00:03.21

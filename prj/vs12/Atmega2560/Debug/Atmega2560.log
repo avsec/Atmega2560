@@ -1,0 +1,10 @@
+﻿Compilación iniciada a las 10/02/2013 12:49:39.
+     1>Proyecto "C:\Users\usuario\Documents\Atmega2560\prj\vs12\Atmega2560\Atmega2560.vcxproj" en el nodo 2 (Build destinos).
+     1>Build:
+         make all debug=true
+         make: Nothing to be done for `all'.
+     1>Compilación del proyecto terminada "C:\Users\usuario\Documents\Atmega2560\prj\vs12\Atmega2560\Atmega2560.vcxproj" (Build destinos).
+
+Compilación correcta.
+
+Tiempo transcurrido 00:00:00.17
